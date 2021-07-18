@@ -1,5 +1,7 @@
 import React from "react";
-import { menuList, friendList } from "./menuList";
+import { menuList } from "./menuList";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 import "./sidebar.css";
 
 function Sidebar() {
@@ -17,15 +19,8 @@ function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          {friendList.map((friendList) => (
-            <li className="sidebarFriend">
-              <img
-                className="sidebarFriendImg"
-                src={friendList.friendImage}
-                alt=""
-              />
-              <span className="sidebarFriendName">{friendList.friendName}</span>
-            </li>
+          {Users.map((friendList) => (
+            <CloseFriend friendList={friendList} />
           ))}
         </ul>
       </div>

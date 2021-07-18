@@ -32,17 +32,17 @@ export const menuList = [
     logo: Group,
   },
   {
-    name: "Book",
+    name: "Bookmarks",
     lnk: "/bookmarks",
     logo: Book,
   },
   {
-    name: "Help",
+    name: "Questions",
     lnk: "/helpl",
     logo: Help,
   },
   {
-    name: "Work",
+    name: "Job",
     lnk: "/work",
     logo: Work,
   },
@@ -55,40 +55,5 @@ export const menuList = [
     name: "School",
     lnk: "/school",
     logo: School,
-  },
-];
-
-export const friendList = [
-  {
-    friendImage: ProfileImg,
-    friendName: "Jon Doe",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Doe Jon",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Jon Doe",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Doe Jon",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Jon Doe",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Doe Jon",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Jon Doe",
-  },
-  {
-    friendImage: ProfileImg,
-    friendName: "Doe Jon",
   },
 ];
