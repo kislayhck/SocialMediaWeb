@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./post.css";
-import ProfileImg from "../../assets/profile.jpeg";
-import Jsf from "../../assets/jsf.jpg";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
+import Heart from "../../assets/heart.png";
+import Like from "../../assets/like.png";
 import { MoreVert } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 
 function Post({ post }) {
+  const [like, setLike] = useState(post.like);
+  const [isliked, setIsLiked] = useState(false);
+
   const user = Users.filter((user) => user.id === post?.userId)[0].username;
   const profilePic = Users.filter((user) => user.id === post?.userId)[0]
     .profilePicture;
+
+  const handleClick = () => {
+    setLike(like + 1);
+    setIsLiked(true);
+    if (isliked) {
+      setLike(like - 1);
+      setIsLiked(false);
+    }
+  };
 
   return (
     <div className="post">
@@ -31,11 +41,19 @@ function Post({ post }) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <FavoriteIcon className="likeIcon" htmlColor="red" />
-            <ThumbUpIcon className="likeIcon" htmlColor="rgb(117, 117, 194)" />
-            <span className="postLikeCounter">
-              {post.like} peoples like this
-            </span>
+            <img
+              src={Like}
+              onClick={handleClick}
+              className="likeIcon1"
+              alt="like"
+            />
+            <img
+              src={Heart}
+              onClick={handleClick}
+              className="likeIcon2"
+              alt="like"
+            />
+            <span className="postLikeCounter">{like} peoples like this</span>
           </div>
           <div className="postBottomRight">
             <div className="postCommentText">{post.comment} comments</div>
