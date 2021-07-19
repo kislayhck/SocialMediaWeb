@@ -9,7 +9,6 @@ import {
   Event,
   School,
 } from "@material-ui/icons";
-import ProfileImg from "../../assets/profile.jpeg";
 export const menuList = [
   {
     name: "Feed",

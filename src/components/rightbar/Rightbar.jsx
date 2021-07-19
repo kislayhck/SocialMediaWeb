@@ -1,8 +1,8 @@
-import "./rightbar.css";
 import Birthday from "../../assets/birthday.jpg";
 import Oil from "../../assets/oil.jpg";
 import { Users } from "../../dummyData";
 import Online from "../online/Online";
+import "./rightbar.css";
 
 function Rightbar() {
   return (
@@ -11,7 +11,7 @@ function Rightbar() {
         <div className="birthdayContainer">
           <img className="birthdayImg" src={Birthday} alt="" />
           <span className="birthdayText">
-            <b>Js films</b> and <b> other friends</b> have a birthday today
+            <b>Kislay</b> and <b>29 other friends</b> have a birthday today
           </span>
         </div>
         <img src={Oil} className="rightAd" alt="" />

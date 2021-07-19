@@ -1,28 +1,40 @@
+import person1 from "./assets/person/1.jpg";
+import person2 from "./assets/person/2.jpg";
+import person3 from "./assets/person/3.jpg";
+import person4 from "./assets/person/4.jpg";
+import person5 from "./assets/person/5.jpg";
+
+import post1 from "./assets/post/p1.jpeg";
+import post2 from "./assets/post/p2.jpg";
+import post3 from "./assets/post/p3.jpg";
+import post4 from "./assets/post/p4.jpg";
+import post5 from "./assets/post/p5.jpeg";
+
 export const Users = [
   {
     id: 1,
-    profilePicture: "assets/person/1.jpg",
-    username: "Bagal wali",
+    profilePicture: person1,
+    username: "user1",
   },
   {
     id: 2,
-    profilePicture: "assets/person/2.jpg",
-    username: "Bahar wali",
+    profilePicture: person2,
+    username: "user2",
   },
   {
     id: 3,
-    profilePicture: "assets/person/3.jpg",
-    username: "Elon Bhai",
+    profilePicture: person3,
+    username: "Elon",
   },
   {
     id: 4,
-    profilePicture: "assets/person/4.jpg",
-    username: "Dummy",
+    profilePicture: person4,
+    username: "user3",
   },
   {
     id: 5,
-    profilePicture: "assets/person/5.jpg",
-    username: "Achi wali",
+    profilePicture: person5,
+    username: "user5",
   },
 ];
 
@@ -30,7 +42,7 @@ export const Posts = [
   {
     id: 1,
     desc: "Love For All, Hatred For None.",
-    photo: "assets/post/1.jpg",
+    photo: post1,
     date: "5 mins ago",
     userId: 1,
     like: 32,
@@ -38,7 +50,7 @@ export const Posts = [
   },
   {
     id: 2,
-    photo: "assets/post/2.jpg",
+    photo: post2,
     date: "15 mins ago",
     userId: 2,
     like: 2,
@@ -47,7 +59,7 @@ export const Posts = [
   {
     id: 3,
     desc: "Every moment is a fresh beginning.",
-    photo: "assets/post/3.jpg",
+    photo: post3,
     date: "1 hour ago",
     userId: 3,
     like: 61,
@@ -55,7 +67,7 @@ export const Posts = [
   },
   {
     id: 4,
-    photo: "assets/post/4.jpg",
+    photo: post4,
     date: "4 hours ago",
     userId: 4,
     like: 7,
@@ -63,7 +75,7 @@ export const Posts = [
   },
   {
     id: 5,
-    photo: "assets/post/5.jpg",
+    photo: post5,
     date: "5 hours ago",
     userId: 5,
     like: 23,
